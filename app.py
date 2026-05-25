@@ -65,7 +65,7 @@ if prompt := st.chat_input("想問什麼事"): # 【填空 16】Streamlit 產生
     st.chat_message("user").write(prompt)
 
     # 將使用者訊息加入歷史紀錄清單中
-    st.session_state.messages.________({"role": "user", "content": prompt}) # 【填空 17】Python 串列新增元素的函式
+    st.session_state.messages.append({"role": "user", "content": prompt}) # 【填空 17】Python 串列新增元素的函式
 
     with st.spinner("處理中"): # 【填空 18】Streamlit 產生轉圈圈載入動畫的函式
         try:
